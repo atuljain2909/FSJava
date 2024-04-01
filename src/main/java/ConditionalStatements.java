@@ -25,9 +25,9 @@ public class ConditionalStatements {
 
     public String getOutputMessageBasedOnAgeAndGender(int age, String gender) {
         if (age > 0 && age < 18) {
-            if (gender.equals("Male")) {
+            if (gender.equalsIgnoreCase("Male")) {
                 return "Boy";
-            } else if (gender.equals("Female")){
+            } else if (gender.equalsIgnoreCase("Female")){
                 return "Girl";
             }
             else{
@@ -35,10 +35,10 @@ public class ConditionalStatements {
             }
         }
         else if (age >= 18 && age < 60){
-                if (gender.equals("Male")){
+                if (gender.equalsIgnoreCase("Male")){
                     return "Man";
                 }
-                else if (gender.equals("Female")){
+                else if (gender.equalsIgnoreCase("Female")){
                     return "Woman";
                 }
                 else{
@@ -46,7 +46,7 @@ public class ConditionalStatements {
                 }
         }
         else if (age>=60) {
-            if (gender.equals("Male") || gender.equals("Female")) {
+            if (gender.equalsIgnoreCase("Male") || gender.equalsIgnoreCase("Female")) {
                 return "Senior Citizen";
             } else {
                 return "Learn more about genders!";
