@@ -21,13 +21,6 @@ public class ConditionalStatements {
         System.out.println(cs.getOutputMessageBasedOnAgeAndGender(59,"Other"));
         System.out.println(cs.getOutputMessageBasedOnAgeAndGender(60,"Other"));
         System.out.println(cs.getOutputMessageBasedOnAgeAndGender(-1,"Other"));
-
-
-
-
-
-
-
     }
 
     public String getOutputMessageBasedOnAgeAndGender(int age, String gender) {
