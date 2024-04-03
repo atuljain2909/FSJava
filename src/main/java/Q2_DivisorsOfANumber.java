@@ -1,7 +1,5 @@
 public class Q2_DivisorsOfANumber {
 
-    int n;
-
     static void printDivisorsOfANumber (int n) {
 
         if (n < 0) {

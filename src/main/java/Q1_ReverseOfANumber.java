@@ -1,5 +1,4 @@
 public class Q1_ReverseOfANumber {
-    int n;
 
     static void printReverseOfANumber (int n) {
         if (n < 10) {
