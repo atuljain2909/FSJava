@@ -1,3 +1,5 @@
+package in.podtest.bootcamp;
+
 public class Q2_DivisorsOfANumber {
 
     static void printDivisorsOfANumber (int n) {

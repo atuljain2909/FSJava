@@ -1,5 +1,7 @@
+package in.podtest.bootcamp;
+
 public class Q4_StarPattern {
-    static void q4TrianglePattern(int n){
+    static void printQ4TrianglePattern(int n){
         for (int i=1;i<2*n;i++){
             for(int j=1; j<=n;j++){
                 if (i<=n){
