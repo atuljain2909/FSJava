@@ -3,6 +3,7 @@ package in.podtest.bootcamp;
 public class Q1_ReverseOfANumber {
 
     static void printReverseOfANumber (int n) {
+        int rev=0;
         if (n < 10) {
             System.out.println("Enter a number greater than 10 (2 or more digits). Execution terminated!");
         } else {
@@ -11,9 +12,9 @@ public class Q1_ReverseOfANumber {
                 int mod;
                 mod = n % 10;
                 n = n / 10;
-                System.out.print(mod);
+                rev = (rev*10)+mod;
             }
         }
-        System.out.println();
+        System.out.println(rev);
     }
 }
