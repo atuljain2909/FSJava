@@ -19,7 +19,7 @@ public class Employee {
 
     // Question #4.2
     void getDetails(){
-        System.out.println("--------------------------------");//extra line to make demarcation in the console output to be make it more readable, purely optional though!
+        System.out.println("--------------------------------");//extra line to make demarcation in the console output to make it more readable, purely optional though!
         System.out.println("Employee's name is: " + this.name);
         System.out.println("Employee's age is: " + this.age);
         System.out.println("Employee's emp ID is: " + this.empID);
@@ -28,16 +28,14 @@ public class Employee {
 
     // Question #4.2
     float getTaxAmountToBePaid(){
-        float tax;
+        float tax=0.00f;
         if (this.monthlySalary>100000.00f)
             tax=(float)0.2*this.monthlySalary;
-        else
-            tax=0.00f;
         return tax;
     }
 
     // Question #4.3
-    // Had to create a public method which can be used to fetch monthly salary (since the variable in itself if private).
+    // Had to create a public method which can be used to fetch monthly salary (since the variable in itself is private).
     // This method is then called inside Admin->getTotalRequiredBudget() method to compute the total budget.
     public float getEmployeeSalary(){
         return this.monthlySalary;

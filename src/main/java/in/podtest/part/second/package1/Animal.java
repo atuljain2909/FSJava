@@ -1,5 +1,6 @@
 package in.podtest.part.second.package1;
 
+// Question #7
 public class Animal {
     public String name;
     private int age;

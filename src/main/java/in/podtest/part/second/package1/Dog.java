@@ -1,5 +1,6 @@
 package in.podtest.part.second.package1;
 
+// Question #7
 public class Dog extends Animal{
     //Same package, child class, ND -> can access all variables except the private one
     void childMethodToAccessVariablesWithoutDotOperator(){

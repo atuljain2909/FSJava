@@ -19,10 +19,10 @@ public class Main {
         PodTest.employees[4].isActive=false;
 
         // Question #6
-        System.out.println("--------------------------------");//extra line to make demarcation in the console output to be make it more readable, purely optional though!
+        System.out.println("--------------------------------");//extra line to make demarcation in the console output to make it more readable, purely optional though!
         System.out.println("Total budget required for 'PodTest' organization is: " + Rohan.getTotalRequiredBudget(PodTest));
         System.out.println("Total tax collected by 'PodTest' organization is: " + Rohan.getTotalTaxCollected(PodTest));
-        System.out.println("--------------------------------");//extra line to make demarcation in the console output to be make it more readable, purely optional though!
+        System.out.println("--------------------------------");//extra line to make demarcation in the console output to make it more readable, purely optional though!
         System.out.println("Tax details of each employee are as follows:");
         Rohan.printTaxAmountPerEmployee(PodTest);
 
@@ -47,6 +47,6 @@ public class Main {
         PodTest.employees[4].getDetails();
         System.out.println("PodTest's 5th employee's tax amount is: " + PodTest.employees[4].getTaxAmountToBePaid());
         System.out.println("PodTest's 5th employee's monthly salary is (even though this is confidential information, but there's a way to expose it! :-P): " + PodTest.employees[4].getEmployeeSalary());
-        System.out.println("--------------------------------");//extra line to make demarcation in the console output to be make it more readable, purely optional though!
+        System.out.println("--------------------------------");//extra line to make demarcation in the console output to make it more readable, purely optional though!
     }
 }

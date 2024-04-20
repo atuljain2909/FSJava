@@ -1,5 +1,6 @@
 package in.podtest.part.second.package1;
 
+// Question #7
 public class Human {
 
     //Same package, different class, ND -> can't access any variable

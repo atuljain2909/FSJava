@@ -1,7 +1,7 @@
 package in.podtest.part.second.package2;
-
 import in.podtest.part.second.package1.Animal;
 
+// Question #7
 public class Food {
     //Different package, different class, ND -> can't access any variable
     void diffPkgMethodToAccessVariablesWithoutDotOperator(){

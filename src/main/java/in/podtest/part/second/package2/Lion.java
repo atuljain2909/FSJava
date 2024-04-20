@@ -1,7 +1,7 @@
 package in.podtest.part.second.package2;
-
 import in.podtest.part.second.package1.Animal;
 
+// Question #7
 public class Lion extends Animal {
     //Different package, child class, ND -> can access only public and protected variables
     void diffPkgMethodToAccessVariablesWithoutDotOperator(){

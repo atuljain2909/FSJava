@@ -13,6 +13,7 @@ public class Organization {
 
     // Question #4.1
     void printAllEmployeeDetails(){
+        // Used advanced for loop here
         for(Employee e:employees){
             e.getDetails();
         }
