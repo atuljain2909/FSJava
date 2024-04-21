@@ -1,16 +1,17 @@
-public abstract class Animal {
-    String name;//instance variable of super class
+public interface Animal {
 
-    //Custom constructor of super class
-    Animal(String name){
-        this.name=name;
+    //Any method inside an interface are by default abstract and public
+    void eat();
+
+    void walk();
+
+    //Default method of an interface
+    default void sleep(){
+        System.out.println("Animal is sleeping.");
     }
 
-    //Non-abstract method of super class
-    void eat(){
-        System.out.println(name + " is eating.");
+    //Static method of an interface
+    static void prey(){
+        System.out.println("Animal preys to eat food. This is specific to animals and can't be overridden.");
     }
-
-    //Abstract method of super class
-    abstract void walk();
 }
