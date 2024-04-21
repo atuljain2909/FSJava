@@ -2,24 +2,27 @@ public class InheritanceUpcastDowncastDemo {
     public static void main(String[] args) {
         Browser b1 = new Browser();
         b1.openURL();//can access only methods present in Browser class
-
+        System.out.println("----------------------------------------------");
         Chromium c1 = new Chromium();
         c1.inspect();//can access its own methods
         c1.openURL();//can access its ancestors' methods as well
-
+        System.out.println("----------------------------------------------");
         NonChromium nc1 = new NonChromium();
         nc1.ncInspect();//can access its own methods
         nc1.openURL();//can access its ancestors' methods as well
-
+        System.out.println("----------------------------------------------");
+        //When a base class's object is created, all its ancestors' constructors are called.
+        //So, here, when we make an object on Chrome class, first constructor of Browser class is called, thereafter that of Chromium class, and lastly that of Chrome class.
         Chrome ch1 = new Chrome();
         ch1.devTools();//can access its own methods
         ch1.openURL();//can access its ancestors' methods as well
         ch1.inspect();//can access its ancestors' methods as well
-
+        System.out.println("----------------------------------------------");
         Edge e1 = new Edge();
         e1.edgeTools();//can access its own methods
         e1.openURL();//can access its ancestors' methods as well
         e1.inspect();//can access its ancestors' methods as well
+        System.out.println("----------------------------------------------");
 
         //Up casting: converting a child to its ancestor
         //However, such an ancestor will only be able to access methods which an object of such an ancestor would normally be able to!
@@ -29,6 +32,7 @@ public class InheritanceUpcastDowncastDemo {
         ch2.openURL();
         Browser b2 = new Chrome();//can access openURL() method but can't access inspect() and devTools() methods
         b2.openURL();
+        System.out.println("----------------------------------------------");
 
         //Down casting: converting an ancestor to its successor
         //It's not allowed directly. It's like asking a child to behave like a parent. Of course, a child can't have maturity like a parent.
