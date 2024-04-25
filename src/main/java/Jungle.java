@@ -25,11 +25,15 @@ public class Jungle {
        Animal a = new AnimalHumanThing("Animal");
        a.eat();
        a.walk();
+       // a.eatsMeals();//Not allowed, because this method comes from Human interface and not Animal interface
+       // a.walksAndDrives();//Not allowed, because this method comes from Human interface and not Animal interface
        //a.sleep();//Illegal; compiler gets confused which sleep method to call, i.e. from Animal or Human. In fact, a class can't implement two or more interfaces which have a common default method, unless it overrides them
        a.sleep();//Calls the overridden definition of sleep method
        Animal.prey();//Calling static method of interface directly by the name of interface and dot operator
 
        Human h = new AnimalHumanThing("Human");
+       // h.eat();//Not allowed, because this method comes from Animal interface and not Human interface
+       // h.walk();//Not allowed, because this method comes from Animal interface and not Human interface
        h.eatsMeals();
        h.walksAndDrives();
        //h.sleep();//Illegal; compiler gets confused which sleep method to call, i.e. from Animal or Human
