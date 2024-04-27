@@ -1,3 +1,4 @@
+package in.podtest.day22;
 import java.util.*;
 
 public class CollectionsIntro {
@@ -24,7 +25,7 @@ public class CollectionsIntro {
         for(Object o : set) {
             System.out.println(o);//object retrieval directly
         }
-        set.add("Guest1");//Doesn't allow duplicate values, so it removed the previous entry and made afresh entry
+        set.add("Guest1");//Doesn't allow duplicate values, so it removed the previous entry and made a fresh entry
         System.out.println(set.size());//3
         for(Object o : set) {
             System.out.println(o.toString());//object retrieval after converting to string (conversion is not necessary though)
@@ -76,16 +77,16 @@ public class CollectionsIntro {
         map.put("Guest2", 102);
         map.put("Guest3", 103);
         System.out.println(map.size());//3
-        for(Object o : map.keySet()) {
+        for(Object o : map.keySet()) {//1st way of retrieval: uses keySet()
             System.out.println("Key:"+ o + ", Value:" + map.get(o));
         }
         System.out.println("KEY=VALUE");
-        for(Object o : map.entrySet()) {
+        for(Object o : map.entrySet()) {//2nd way of retrieval: uses entrySet()
             System.out.println(o);
         }
         map.put("Guest1", 102);//Doesn't allow duplicate keys, values can be duplicate though
         System.out.println(map.size());//3
-        for(Object o : map.entrySet()) {
+        for(Object o : map.entrySet()) {//3rd way of retrieval: uses entrySet() and split()
             System.out.println("Key:"+ o.toString().split("=")[0] + ",Value" + o.toString().split("=")[1]);
         }
         System.out.println("-------------------------------------------");
